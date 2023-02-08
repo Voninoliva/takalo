@@ -14,7 +14,7 @@
             </div>
             <div class="media-content">
               <p class="title is-4"><?php echo $obj['nom']; ?></p>
-              <p class="subtitle is-6"><?php echo $obj['prixEstimatif']; ?></p>
+              <p class="subtitle is-6">Ar<?php echo $obj['prixEstimatif']; ?></p>
             </div>
           </div>
 

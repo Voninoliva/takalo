@@ -9,27 +9,25 @@
     <link rel="stylesheet" href=<?php echo base_url('assets/css/style.css'); ?>>
     <link rel="stylesheet" href=<?php echo base_url('assets/css/bulma/css/bulma.css'); ?>>
     <link rel="stylesheet" href=<?php echo base_url('assets/css/aaastyle.css'); ?>>
+    <link rel="stylesheet" href=<?php echo base_url('assets/css/footer.css'); ?>>
+
     <title>Document</title>
 </head>
 <body>
-
-<header class="has-navbar-fixed-top has-background-danger-dark">
+<style>
+    a{
+        display: flex;
+    }
+</style>
+<header class="has-background-danger-dark">
         <nav class="navbar is-transparent is-fixed-top">
-            <div class="navbar-brand">
-                <div class="navbar-item">
-                    
-                </div>
-                <div class="navbar-burger">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
-            <div class="navbar-menu">
-                <div class="navbar-start">
+            <div class="">
+                <div class="">
                     <a href="<?php echo site_url('affichage/seeAll');?>" class="navbar-item">Home</a>
                     <a href="<?php echo site_url('affichage/searchPage');?>" class="navbar-item">recherche multi</a>
-                    <a href="<?php echo site_url('');?>" class="navbar-item">Liste propositions</a>
+                    <a href="#" class="navbar-item">Liste propositions</a>
                 </div>
-                <div class="navbar-end">
+                <div class="">
                     <a href="<?php echo site_url('user/myObj');?>" class="navbar-item">Moi</a>
                     <a href="#" class="navbar-item"><i class="fa-regular fa-bell is-size-5"></i></a>
                     <a href="#" class="navbar-item"><i class="fas fa-gear is-size-5"></i></a>

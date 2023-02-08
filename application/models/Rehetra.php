@@ -1,14 +1,9 @@
 <?php
 class Rehetra extends CI_Model{
-    public function getAllObject($id){
-        $req="select*from objet where idPersonne!=%s";
-        $req=sprintf($req,$this->db->escape($id));
-        $sql=$this->db->query($req);
-        $re=array();
-        foreach($sql->result_array() as $row){
-            $re[]=$row;
-        }
-        return $re;
+    public function getAll(){
+        $query = $this->db->query('SELECT * from objet');
+        return $query->result_array();
+       
     }
 
     public function getAllCat(){

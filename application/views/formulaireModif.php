@@ -11,8 +11,8 @@
     <input type="text" name="nom" value="<?php echo $nom; ?>">
     <input type="hidden" name="idOb" value="<?php echo $idObjet; ?>">
     <input type="text" name="descri"    value="<?php echo $descri; ?>">
-    <input type="number" name="prix" value="<?php echo $prixEstimatif; ?>">
-    <input type="file" name="a0">
+    <input type="text" name="prix" value="<?php echo $prixEstimatif; ?>">
+    <input type="hidden" name="a0" value="<?php echo $photo; ?>">
     <input type="submit" value="Modifier cet objet">
     </form>
 </body>

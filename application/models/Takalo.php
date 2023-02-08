@@ -61,7 +61,7 @@ class Takalo extends CI_Model{
         foreach($sql->result_array() as $row){
             $re[]=$row;
         }
-        return $re[0];
+        return $re[0]['count(id)'];
     }
 }
 

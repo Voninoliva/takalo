@@ -81,14 +81,14 @@ class Gestion extends CI_Model{
     }
     public function statUser(){
         //mety oe mila amboarina kely le requete
-        $req="select count(id),date from personne group by date asc";
+        $req="select count(id) from personne";
         $sql=$this->db->query($req);
         $re=array();
         foreach($sql->result_array() as $row){
             $re[]=$row;
             //mila amboarina kely le pozin le valiny apotra
         }
-        return $re;
+        return $re[0]['count(id)'];
     }
 }
 ?>

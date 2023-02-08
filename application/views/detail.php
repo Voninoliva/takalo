@@ -20,3 +20,4 @@
 ?>
 </div>
 <?php } ?>
+<a href="<?php echo site_url('affichage/seeAll'); ?>">retour</a>

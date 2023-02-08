@@ -9,27 +9,28 @@
     <link rel="stylesheet" href=<?php echo base_url('assets/css/style.css'); ?>>
     <link rel="stylesheet" href=<?php echo base_url('assets/css/bulma/css/bulma.css'); ?>>
     <link rel="stylesheet" href=<?php echo base_url('assets/css/aaastyle.css'); ?>>
+    <link rel="stylesheet" href=<?php echo base_url('assets/css/footer.css'); ?>>
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/connexion.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/inscription.css'); ?>">
     <title>Document</title>
 </head>
 <body>
 
-<header class="has-navbar-fixed-top has-background-danger-dark">
+<header class="has-background-danger-dark">
         <nav class="navbar is-transparent is-fixed-top">
             <div class="navbar-brand">
                 <div class="navbar-item">
                     TAKALO-TAKALO
                 </div>
-                <div class="navbar-burger">
-                    <span></span><span></span><span></span>
-                </div>
             </div>
-            <div class="navbar-menu">
-                <div class="navbar-start">
+            <div class="">
+                <div class="">
                     <a href="<?php echo site_url('affichage/seeAll');?>" class="navbar-item">Home</a>
-                    <a href="<?php echo site_url('');?>" class="navbar-item">Add categories</a>
-                    <a href="<?php echo site_url('');?>" class="navbar-item">Categoriser</a>   
+                    <a href="<?php echo site_url('accueilAdmin');?>" class="navbar-item">Categories</a> 
+                    <a href="<?php echo site_url('user/statUser');?>" class="navbar-item">StatUser</a>
+                    <a href="<?php echo site_url('echange/statEchange');?>" class="navbar-item">StatEchange</a>   
                 </div>
-                <div class="navbar-end">
+                <div class="">
                     <a href="<?php echo site_url('user/myObj');?>" class="navbar-item">Moi</a>
                     <a href="#" class="navbar-item"><i class="fa-regular fa-bell is-size-5"></i></a>
                     <a href="#" class="navbar-item"><i class="fas fa-gear is-size-5"></i></a>

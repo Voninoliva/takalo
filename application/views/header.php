@@ -36,5 +36,4 @@
                 </div>
             </div>
         </nav>
-        okokookokokokokokok
     </header>

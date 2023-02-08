@@ -10,7 +10,7 @@ create table personne(
 );
 
 create table categorie(
-    idCategorie int PRIMARY KEY,
+    idCategorie int PRIMARY KEY AUTO_INCREMENT,
     nom VARCHAR(30)
 );
 
@@ -25,7 +25,7 @@ create table objet(
 );
 
 create table registre(
-    idRegistre int PRIMARY KEY,
+    idRegistre int PRIMARY KEY AUTO_INCREMENT,
     idObjet1 int,
     idObjet2 int,
     date timestamp,
@@ -43,18 +43,22 @@ create table catOb(
     FOREIGN KEY (idObjet) references Objet(idObjet)
 );
 
-insert into personne values (null,1,',now()Ra','Miora','Andoharanofotsy','+261342519458','Miora@gmail.com','root',null,1);,now()
-insert into personne values (2,'Rakoto','Tafita','Andoharanofotsy','+261345264875','Tafita@gmail.com','root',null,1);,now()
-insert into personne values (3,'Raza','Toavina','Andoharanofotsy','+261344685975','Toavina@gmail.com','root',null,1);,now()
+create table photo(
+    id int PRIMARY Key AUTO_INCREMENT
+);
+
+insert into personne values (1,'Ra','Miora','Andoharanofotsy','+261342519458','Miora@gmail.com','root',1);
+insert into personne values (2,'Rakoto','Tafita','Andoharanofotsy','+261345264875','Tafita@gmail.com','root',1);
+insert into personne values (3,'Raza','Toavina','Andoharanofotsy','+261344685975','Toavina@gmail.com','root',1);
 insert into personne values (4,'Rabe','Jean','Andoharanofotsy','+261325168475','Jean@gmail.com','0000',0);
 insert into personne values (5,'Ral','Steve','Andoharanofotsy','+261325168475','Steve@gmail.com','0000',0);
 insert into personne values (6,'Randria','Pierre','Andoharanofotsy','+261325168475','Pierre@gmail.com','0000',0);
 
-insert into categorie values (null,1,',now()Accessoires');
+insert into categorie values (1,'Accessoires');
 insert into categorie values (2,'Livres');
 
-insert into objet values (null,1,4,now(),'Jamais Plus','Livre de Colleen Hoover','livres/Livre1.jpg',7.60);
-insert into objet values (2,5,'Captive','Tome null,1 d,now()e la série','livres/Livre2.jpg',20);
+insert into objet values (1,4,'Jamais Plus','Livre de Colleen Hoover','livres/Livre1.jpg',7.60);
+insert into objet values (2,5,'Captive','Tome 1 de la série','livres/Livre2.jpg',20);
 insert into objet values (3,6,'Le suppléant','Livre écrit par le prince Harry','livres/Livre3.jpg',26.50);
 insert into objet values (4,4,'Apple Watch','Nouveau Produit de montre Apple','accessoires/apple-watch.png',50);
 insert into objet values (5,5,'Black Headphones','Casque noir sorti de denière marque','accessoires/black-headphones.png',15.50);
@@ -68,6 +72,18 @@ insert into objet values (12,6,'Speaker', ' Speaker de type Alexa ','accessoires
 insert into objet values (13,4,'Casque VR', 'Casque de Réalité virtuelle ','accessoires/vr.png',199);
 
 
+insert into categorie values (3,'Sport');
+insert into categorie values (4,'Vetements');
+
+insert into objet values (14,5,'Ballon Foot', 'Ballon de Foot Adidas','sport/foot.jpg',15);
+insert into objet values (15,6,'Ballon Basket', 'Ballon de Basket Spalding Precision','sport/basket.jpg',25);
+insert into objet values (16,4,'But', 'But de terrain de foot ','sport/but.jpg',149);
+insert into objet values (17,5,'Haltères', 'Haltères de salle de gym','sport/haltere.jpg',20);
+insert into objet values (18,6,'Polo blanc', 'Polo blanc de taille L','vetements/akanjo1.jpg',10);
+insert into objet values (19,6,'Pantalon noir', 'Pantalon noir ','vetements/akanjo2.jpg',7.69);
+insert into objet values (20,6,'Pantalon jean bleu', 'Pantalon jean bleu','vetements/akanjo3.jpg',8.99);
+
+
 insert into catOb values (null,1,4,now());
 insert into catOb values (null,1,5,now());
 insert into catOb values (null,1,6,now());
@@ -75,9 +91,18 @@ insert into catOb values (null,1,7,now());
 insert into catOb values (null,1,8,now());
 insert into catOb values (null,1,9,now());
 insert into catOb values (null,1,1,now());
-insert into catOb values (null,1,1,now());
-insert into catOb values (null,1,1,now());
-insert into catOb values (null,1,1,now());
 insert into catOb values (null,2,1,now());
 insert into catOb values (null,2,2,now());
 insert into catOb values (null,2,3,now());
+insert into catOb values (null,1,10,now());
+insert into catOb values (null,1,11,now());
+insert into catOb values (null,1,12,now());
+insert into catOb values (null,1,13,now());
+insert into catOb values (null,3,14,now());
+insert into catOb values (null,3,15,now());
+insert into catOb values (null,3,16,now());
+insert into catOb values (null,3,17,now());
+insert into catOb values (null,4,18,now());
+insert into catOb values (null,4,19,now());
+insert into catOb values (null,4,20,now());
+
